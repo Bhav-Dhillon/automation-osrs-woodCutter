@@ -1,1 +1,3 @@
 # osrs-automation
+
+"hello GitHub!"
