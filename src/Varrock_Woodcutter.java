@@ -7,7 +7,7 @@ import org.osbot.rs07.script.ScriptManifest;
 
 import java.util.Arrays;
 
-@ScriptManifest(author = "You", info = "My first script", name = "Varrock Woodcutter", version = 0, logo = "")
+@ScriptManifest(author = "Mr. Galactic", info = "My first script", name = "Galactic Wood-Cutter", version = 0, logo = "")
 public class Varrock_Woodcutter extends Script
 {
     //Walking Back Paths:
@@ -16,7 +16,7 @@ public class Varrock_Woodcutter extends Script
             new Position(3279, 3423, 0), new Position(3281, 3416, 0)
     };
 
-    //add second walking path and randomize between the two
+    //add multiple walking paths and randomize between them.
 
 
     //Banking Function:
@@ -24,15 +24,13 @@ public class Varrock_Woodcutter extends Script
     {
         RS2Object bank1 = getObjects().closest("Bank booth");
         bank1.interact("Bank");
-        sleep(912);
-        sleep(900);
+        sleep(1800);
         getBank().deposit("Oak logs", 99);
-        sleep(934);
-        sleep(934);
+        sleep(1868);
         getBank().close();
     }
 
-    //Walking Back Function:
+    // Walking Back Function:
     void walkBack() throws InterruptedException
     {
         getWalking().walkPath(Arrays.asList(path1));
@@ -41,7 +39,7 @@ public class Varrock_Woodcutter extends Script
     }
 
 
-    //Executes once on start
+    // Executes once on start
     @Override
     public void onStart() {
         log("Let's get started!");
@@ -77,7 +75,7 @@ public class Varrock_Woodcutter extends Script
 
     @Override
     public void onExit() {
-        log("Thanks for running my Tea Thiever!");
+        log("Thanks for running Galactic Wood-Cutter");
     }
 
 
