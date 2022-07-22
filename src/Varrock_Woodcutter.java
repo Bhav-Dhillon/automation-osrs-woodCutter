@@ -7,7 +7,7 @@ import org.osbot.rs07.script.ScriptManifest;
 
 import java.util.Arrays;
 
-@ScriptManifest(author = "Mr. Galactic", info = "My first script", name = "Galactic Wood-Cutter", version = 0, logo = "")
+@ScriptManifest(author = "Dhillon", info = "WoodCutter", name = "Galactic Wood-Cutter", version = 0.0.1, logo = "")
 public class Varrock_Woodcutter extends Script
 {
     //Walking Back Paths:
